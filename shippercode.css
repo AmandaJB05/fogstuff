@@ -1,0 +1,49 @@
+:root {--mnd-egress: 137, 51, 52}
+:root {--mnd-enri: 75, 173, 175}
+:root {--mnd-primus: 132, 63, 114}
+:root {--mnd-rynn: 178, 194, 104}
+:root {--mnd-vis: 57, 129, 86}
+:root {--mnd-volatus: 44, 81, 118}
+.mndbg {transition: 1s; width: 850px; height: 400px; background-color: #fff; padding: 15px 15px 15px 15px; text-align: left; margin-bottom: 10px; overflow: hidden; position: relative;} .mndbg h1 {font-size: 40px; font-family: lexend, sans serif; text-transform: uppercase; font-weight: 400; border-bottom: 5px solid rgba(214, 130, 29, .3); width: fit-content; padding-bottom: 20px; overflow: hidden;} 
+.mndbg h2 {margin-top: -10px; font-size: 30px; font-family: lexend, sans serif; text-transform: uppercase; font-weight: 400; width: fit-content; padding-bottom: 10px;} 
+.mndwriter {width: 665px; border: 1px solid rgba(214, 130, 29, .3); padding: 40px 40px 30px 40px; text-align: justify; font-size: 13px; line-height: 200%; margin-top: -27px; }
+
+#mndlocation {height: 25px; width: fit-content; transition: 1s; display: inline-block; position: relative; left: 0px; overflow: hidden; font-size: 30px; font-family: lexend, sans serif; text-transform: uppercase; font-weight: 400; width: fit-content; transform: rotate(270deg); }
+.loc-egress {bottom: 100px; margin-right: -65px; margin-left: -70px; color: rgba(var(--mnd-egress));}
+.loc-enri {bottom: 70px; margin-right: -40px; margin-left: -40px; color: rgba(var(--mnd-enri));}
+.loc-egress {bottom: 100px; margin-right: -65px; margin-left: -70px; color: rgba(var(--mnd-egress));}
+.loc-primus {bottom: 60px; margin-right: -27px; margin-left: -27px; color: rgba(var(--mnd-primus));}
+.loc-rynn {bottom: 65px; margin-right: -35px; margin-left: -35px; color: rgba(var(--mnd-rynn));}
+.loc-vis {bottom: 65px; margin-right: -35px; margin-left: -35px; color: rgba(var(--mnd-vis));}
+.loc-volatus {bottom: 155px; margin-right: -120px; margin-left: -120px; color: rgba(var(--mnd-volatus));}
+
+.mndthechars {white-space: nowrap;}
+
+#mndcharimg {background-position: left; background-repeat: no-repeat; background-size: 250px; background-color: #fff; height: 400px; width: 100px; filter: grayscale(100%); transition: 1s; display: inline-block; position: relative; left: 0px; overflow: hidden; z-index: 50;} #mndcharimg:hover {width: 725px; transition: 1s; filter: grayscale(0%);} #mndcharimg:hover:nth-child(3) {left: -105px;} #mndcharimg:hover:nth-child(4) {left: -210px;} #mndcharimg:hover:nth-child(5) {left: -315px;} #mndcharimg:hover:nth-child(6) {left: -420px;} #mndcharimg:hover:nth-child(7) {left: -525px;} #mndcharimg:hover:nth-child(8) {left: -630px;} #mndcharimg:hover:nth-child(9) {left: -735px;} #mndcharimg:hover:nth-child(10) {left: -840px;}  #mndcharimg:hover #mndtagtop {opacity: 0; transition: 1s;}
+
+#mndcharimg:nth-child(2):hover ~ #mndcharimg:nth-child(n+2) {opacity: 0%; transition: 0.5s;}
+#mndcharimg:nth-child(3):hover ~ #mndcharimg:nth-child(n+3) {opacity: 0%; transition: 0.5s;} 
+#mndcharimg:nth-child(4):hover ~ #mndcharimg:nth-child(n+4) {opacity: 0%; transition: 0.5s;}
+#mndcharimg:nth-child(5):hover ~ #mndcharimg:nth-child(n+5) {opacity: 0%; transition: 0.5s;} 
+#mndcharimg:nth-child(6):hover ~ #mndcharimg:nth-child(n+6) {opacity: 0%; transition: 0.5s;}
+#mndcharimg:nth-child(7):hover ~ #mndcharimg:nth-child(n+7) {opacity: 0%; transition: 0.5s;}
+#mndcharimg:nth-child(8):hover ~ #mndcharimg:nth-child(n+8) {opacity: 0%; transition: 0.5s;}
+#mndcharimg:nth-child(9):hover ~ #mndcharimg:nth-child(n+9) {opacity: 0%; transition: 0.5s;}
+
+#mndtagtop {text-transform: uppercase; font-size: 9.5px; position:absolute; top:0; left: 0; z-index: 51; margin-bottom: 15px; margin-left: -35px; color: rgba(0,0,0, 0.5); list-style-type: none; opacity: 100; transition: 2s;} #mndtagtop li {margin-top: 8px; padding: 2px 4px 0px 4px; border-radius: 4px; width: fit-content; max-width: 80px; white-space: normal;}
+#mndtag {text-transform: uppercase; font-size: 9.5px; position:absolute; bottom:0; left: 0; z-index: 51; margin-bottom: 15px; margin-left: -35px; color: rgba(255,255,255, 0.75); list-style-type: none;} #mndtag li {margin-bottom: 4px; padding: 2px 4px 0px 4px; border-radius: 4px; width: fit-content; max-width: 80px; white-space: normal;}
+.mnd-names li {background-color: rgba(255,255,255, 0.6); border: 1px solid rgba(255,255,255, 0); line-height: 160%; font-size: 13px; letter-spacing: 2px;}
+.mnd-egress li {background-color: rgba(var(--mnd-egress), 0.9); border: 1px solid rgba(var(--mnd-egress),1); line-height: 160%;} 
+.mnd-enri li {background-color: rgba(var(--mnd-enri), 0.9); border: 1px solid rgba(var(--mnd-enri),1); line-height: 160%;} 
+.mnd-primus li {background-color: rgba(var(--mnd-primus), 0.9); border: 1px solid rgba(var(--mnd-primus),1); line-height: 160%;} 
+.mnd-rynn li {background-color: rgba(var(--mnd-rynn), 0.9); border: 1px solid rgba(var(--mnd-rynn),1); line-height: 160%;} 
+.mnd-vis li {background-color: rgba(var(--mnd-vis), 0.9); border: 1px solid rgba(var(--mnd-vis),1); line-height: 160%;} 
+.mnd-volatus li {background-color: rgba(var(--mnd-volatus), 0.9); border: 1px solid rgba(var(--mnd-volatus),1); line-height: 160%;} 
+
+.mndchardeets {width: 450px; height: 450px; background-color: #fff; margin-left: 250px; margin-top: 5px; border: 10px solid #fff; font-size: 12px; line-height: 190%; text-align: justify;}
+.mndquickdeets {border: 1px solid #000; width: 400px; height: 65px; white-space: normal; padding: 20px; line-height: 180%; margin-left: 10px; overflow-y: scroll; font-size: 11.5px; font-weight: 800;}
+.mndmaindeets {width: 380px; white-space: normal; padding: 30px; line-height: 180%; margin-left: 10px; overflow-y: scroll; margin-top: -1px; height: 130px; margin-bottom: 15px;}
+.mndchardeets span {background-color: rgba(0,0,0, 0.01); border: 1px solid rgba(0,0,0,0.1); line-height: 160%; padding: 10px; border-radius: 4px; font-family: lexend, sans serif; text-transform: uppercase; font-size: 10px; font-weight: 400; color: rgba(0,0,0,0.5)}
+
+h3 {font-size: 15px; letter-spacing: 2px; text-transform: uppercase; font-family: lexend, sans serif; text-transform: uppercase; font-weight: 400; border-bottom: 5px solid #000; width: fit-content; padding: 0px 0px 10px 0px; margin: 0px 0px 0px 20px; overflow: hidden; color: #000;}
+h3 a {color: #000;}
